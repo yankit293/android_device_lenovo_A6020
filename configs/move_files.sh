@@ -25,5 +25,11 @@ case "$board_id" in
 esac
 
 # Move variant-specific blobs
+mount /system
+mount -o rw,remount /system
+mount -o rw,remount /system /system
+mount /firmware
 mv /system/etc/firmware/variant/$device/venus* /system/etc/firmware/
 rm -rf /system/etc/firmware/variant
+umount /firmware/
+umount /system
