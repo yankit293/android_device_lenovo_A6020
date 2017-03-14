@@ -1,3 +1,3 @@
 # Firmware patch
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/move_files.sh:install/bin/move_files.sh
+    $(LOCAL_PATH)/configs/move_files.sh:system/bin/move_files.sh

@@ -33,7 +33,7 @@ def AddAssertion(info):
 
 def ReplaceDeviceConfig(info):
   info.script.AppendExtra('ui_print("Copying device specific files.");')
-  info.script.AppendExtra('run_program("/sbin/sh", "/tmp/install/bin/move_files.sh");')
+  info.script.AppendExtra('run_program("/sbin/sh", "/system/bin/move_files.sh");')
 
 def RestoreDeviceConfig(info):
   pass
