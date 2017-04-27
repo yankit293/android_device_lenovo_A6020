@@ -14,3 +14,5 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8916
+
+include device/qcom/common/common.mk

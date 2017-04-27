@@ -151,10 +151,6 @@
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <add-resource name="config_intrusiveBatteryLed" type="bool"/>
-    <bool name="config_intrusiveBatteryLed">true</bool>
-
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
@@ -183,23 +179,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <add-resource name="config_deviceHardwareKeys" type="integer"/>
     <integer name="config_deviceHardwareKeys">83</integer>
-
-    <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
-         This integer should equal the sum of the corresponding value for each
-         of the following keys present:
-             1 - Home
-             2 - Back
-             4 - Menu
-             8 - Assistant (search)
-            16 - App switch
-            32 - Camera
-            64 - Volume rocker
-         For example, a device with Home, Back and Menu keys would set this
-         config to 7. -->
-    <add-resource name="config_deviceHardwareWakeKeys" type="integer"/>
-    <integer name="config_deviceHardwareWakeKeys">64</integer>
 
    <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
@@ -210,23 +190,8 @@
             5 - In-app Search
          This needs to match the constants in
          policy/src/com/android/internal/policy/impl/PhoneWindowManager.java -->
-    <integer name="config_longPressOnHomeBehavior">3</integer>
+    <integer name="config_longPressOnHomeBehavior">2</integer>
     
-   <!-- Control the behavior when the user long presses the app switch button.
-            0 - Nothing
-            1 - Menu key
-            2 - Recent apps view in SystemUI
-            3 - Launch assist intent
-            4 - Voice Search
-            5 - In-app Search
-            6 - Launch camera
-            7 - Turn screen off
-            8 - Last app
-         This needs to match the constants in
-         services/core/java/com/android/server/policy/PhoneWindowManager.java -->
-    <add-resource name="config_longPressOnAppSwitchBehavior" type="integer"/>
-    <integer name="config_longPressOnAppSwitchBehavior">8</integer>
-
     <!-- Control the behavior when the user double-taps the home button.
             0 - Nothing
             1 - Menu
@@ -255,6 +220,9 @@
          Note that doze dreams are not subject to the same start conditions as ordinary dreams.
          Doze dreams will run whenever the power manager is in a dozing state. -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+
+     <!-- enable doze powersaving mode -->
+    <bool name="config_enableAutoPowerModes">true</bool>
 
      <!-- If true, the doze component is not started until after the screen has been
           turned off and the screen off animation has been performed. -->
@@ -310,3 +278,4 @@
         <item>"/data/dalvik-cache/arm/system@framework@services.jar@classes.dex"</item>
    </string-array>
 </resources>
+
