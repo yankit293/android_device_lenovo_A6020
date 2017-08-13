@@ -1,2 +1,2 @@
 
-add_lunch_combo slim_A6020-userdebug
+add_lunch_combo aoscp_A6020-userdebug

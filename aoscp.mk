@@ -12,10 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/lenovo/A6020/full_A6020.mk)
+$(call inherit-product, device/lenovo/A6020/A6020.mk)
+
+# Inherit telephony stuff
+$(call inherit-product, vendor/aoscp/configs/telephony.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product-if-exists, vendor/slim/config/common_full_phone.mk)
+$(call inherit-product-if-exists, vendor/aoscp/configs/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -23,4 +26,7 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A6020
-PRODUCT_NAME := slim_A6020
+PRODUCT_NAME := aoscp_A6020
+PRODUCT_BRAND := Lenovo
+PRODUCT_MODEL := Vibe K5
+PRODUCT_MANUFACTURER := Lenovo
