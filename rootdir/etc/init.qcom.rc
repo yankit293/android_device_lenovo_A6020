@@ -298,8 +298,8 @@ on post-fs-data
     mkdir /persist/drm 0770 system system
 <<<<<<< HEAD
     rm /data/system/perfd/default_values
-    setprop ro.min_freq_0 533333
-    setprop ro.min_freq_4 499200
+    setprop ro.min_freq_0 960000
+    setprop ro.min_freq_4 800000
     start perfd
 =======
 >>>>>>> parent of c06ea2d... A6020: Switch to init.power.sh script
@@ -533,7 +533,10 @@ service qcom-sh /system/bin/sh /system/etc/init.qcom.sh
 
 on property:sys.boot_completed=1
 <<<<<<< HEAD
+<<<<<<< HEAD
     write /proc/sys/kernel/sched_boost 0
+=======
+>>>>>>> parent of 00fd2b6... A6020: Rework ramdisk
     # update cpusets now that boot is complete and we want better load balancing
     # reserve CPU 7 for the top app and camera daemon
     write /dev/cpuset/foreground/cpus 0-6
