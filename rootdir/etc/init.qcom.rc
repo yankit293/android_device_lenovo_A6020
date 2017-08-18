@@ -297,10 +297,13 @@ on post-fs-data
     chmod 2770 /data/system/perfd
     mkdir /persist/drm 0770 system system
 <<<<<<< HEAD
+<<<<<<< HEAD
     rm /data/system/perfd/default_values
     setprop ro.min_freq_0 960000
     setprop ro.min_freq_4 800000
     start perfd
+=======
+>>>>>>> parent of c06ea2d... A6020: Switch to init.power.sh script
 =======
 >>>>>>> parent of c06ea2d... A6020: Switch to init.power.sh script
 
@@ -534,6 +537,7 @@ service qcom-sh /system/bin/sh /system/etc/init.qcom.sh
 on property:sys.boot_completed=1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     write /proc/sys/kernel/sched_boost 0
 =======
 >>>>>>> parent of 00fd2b6... A6020: Rework ramdisk
@@ -546,6 +550,8 @@ on property:sys.boot_completed=1
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/camera-daemon/cpus 4-7
 
+=======
+>>>>>>> parent of c06ea2d... A6020: Switch to init.power.sh script
 =======
 >>>>>>> parent of c06ea2d... A6020: Switch to init.power.sh script
     start qcom-sh
