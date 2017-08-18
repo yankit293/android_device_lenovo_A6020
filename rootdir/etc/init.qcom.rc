@@ -538,7 +538,10 @@ on property:sys.boot_completed=1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     write /proc/sys/kernel/sched_boost 0
+=======
+>>>>>>> parent of 00fd2b6... A6020: Rework ramdisk
 =======
 >>>>>>> parent of 00fd2b6... A6020: Rework ramdisk
     # update cpusets now that boot is complete and we want better load balancing
