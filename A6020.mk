@@ -26,3 +26,10 @@ DEVICE_PACKAGE_OVERLAYS += device/lenovo/A6020/overlay
 include $(LOCAL_PATH)/product/*.mk
 
 $(call inherit-product-if-exists, vendor/lenovo/A6020/A6020-vendor.mk)
+
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := A6020
+PRODUCT_NAME := full_A6020
+PRODUCT_BRAND := Lenovo
+PRODUCT_MODEL := Vibe K5
+PRODUCT_MANUFACTURER := Lenovo
