@@ -26,7 +26,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-export PATH=/system/vendor/bin
+export PATH=/vendor/bin
 
 # Set platform variables
 target=`getprop ro.board.platform`
@@ -48,8 +48,8 @@ start_msm_irqbalance_8939()
 
 start_copying_prebuilt_qcril_db()
 {
-    if [ -f /system/vendor/qcril.db -a ! -f /data/misc/radio/qcril.db ]; then
-        cp /system/vendor/qcril.db /data/misc/radio/qcril.db
+    if [ -f /vendor/qcril.db -a ! -f /data/misc/radio/qcril.db ]; then
+        cp /vendor/qcril.db /data/misc/radio/qcril.db
         chown -h radio.radio /data/misc/radio/qcril.db
     fi
 }
