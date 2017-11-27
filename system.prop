@@ -38,6 +38,7 @@ persist.camera.cpp.duplication=false
 persist.sys.chgdisabled=0
 
 # Display
+ro.sf.lcd_density=320
 debug.composition.type=c2d
 debug.enable.sglscale=1
 debug.mdpcomp.idletime=600
