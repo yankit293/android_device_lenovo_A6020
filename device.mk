@@ -22,4 +22,5 @@ DEVICE_PACKAGE_OVERLAYS += device/lenovo/A6020/overlay
 include $(LOCAL_PATH)/product/*.mk
 
 $(call inherit-product-if-exists, vendor/lenovo/A6020/A6020-vendor.mk)
-
+$(call inherit-product-if-exists, vendor/volte/A6020/A6020-vendor.mk)
+$(call inherit-product-if-exists, vendor/volte/volte.mk)
