@@ -1,0 +1,38 @@
+[
+  {
+    "remote": "harry8242",
+    "repository": "display",
+    "target_path": "hardware/qcom/display-caf-msm8916",
+    "revision": "android-8.1-8916"
+  },
+  {
+    "remote": "harry8242",
+    "repository": "audio",
+    "target_path": "hardware/qcom/audio-caf-msm8916",
+    "revision": "android-8.1-8916"
+  },
+  {
+    "remote": "harry8242",
+    "repository": "media",
+    "target_path": "hardware/qcom/media-caf-msm8916",
+    "revision": "android-8.1"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "vendor_qcom_opensource_dataservices",
+    "target_path": "vendor/qcom/opensource/dataservices",
+    "revision": "android-8.1"
+  },
+  {
+    "remote": "harry8242",
+    "repository": "kernel_lenovo_msm8916",
+    "target_path": "kernel/lenovo/msm8916",
+    "revision": "android-8.1"
+  },
+  {
+    "remote": "PixelExperience",
+    "repository": "external_connectivity",
+    "target_path": "external/connectivity",
+    "revision": "oreo-mr1"
+  },
+]
