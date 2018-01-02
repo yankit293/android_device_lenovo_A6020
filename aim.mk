@@ -14,9 +14,11 @@
 
 $(call inherit-product, device/lenovo/A6020/full_A6020.mk)
 
-# Inherit some common omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit some common aim stuff.
+$(call inherit-product, vendor/aim/config/common.mk)
+
+# Inherit some common Android Go configurations
+$(call inherit-product, build/target/product/go_defaults.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -24,4 +26,4 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A6020
-PRODUCT_NAME := omni_A6020
+PRODUCT_NAME := aim_A6020
